@@ -1,0 +1,60 @@
+
+
+/* Constant navbar styling */
+nav {
+    /* define flex container */
+    display: flex;
+
+    /* alignment on the y axis */
+    align-items: center;
+
+    /* Space evenly on the x axis */
+    justify-content: space-evenly;
+
+    /* height: %; */
+
+    background-color: #2B4353;
+    /* padding-left: 30%; */
+    /* word-spacing: 100px; */
+}
+
+nav a {
+  margin: 10px;
+  color: #E8630A
+}
+
+
+/* Top banner styling */
+
+.top_banner {
+  position: relative;
+  text-align: center;
+  color: #E8630A;
+  border: 2px solid #E8630A ;
+  height: 30%
+  /* opacity: 50%; */
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#banner-img {
+  opacity: 50%;
+}
+
+/* Main content */
+
+#about-me1 div {
+  display: flex
+}
+
+.content-image {
+  /* size: 30%; */
+  width: 30%;
+  border: 1px solid #E8630A;
+  margin: 10%;
+}
