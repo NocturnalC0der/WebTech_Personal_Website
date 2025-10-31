@@ -1,4 +1,7 @@
 
+html {
+  background-color:  #96D3D3;
+}
 
 /* Constant navbar styling */
 nav {
@@ -19,20 +22,46 @@ nav {
 }
 
 nav a {
-  margin: 10px;
+  /* margin: 10px; */
+  padding: 15px;
   color: #E8630A
 }
 
+/* ------------ Name heading styling ------------ */
 
-/* Top banner styling */
+#name-heading-cont {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#name-heading {
+  color:#E8630A;
+  letter-spacing: 10px;
+  font-style: italic;
+
+  
+}
+
+#surname-heading {
+  color:#E8630A;
+  letter-spacing: 10px;
+  font-style: italic;
+}
+
+/* ---------------------------------------- */
+
+
+/* Top banner styling
 
 .top_banner {
   position: relative;
   text-align: center;
   color: #E8630A;
   border: 2px solid #E8630A ;
-  height: 30%
-  /* opacity: 50%; */
+  height: 30%;
+  max-height: 300px;
+   opacity: 50%; 
 }
 
 .heading {
@@ -44,17 +73,49 @@ nav a {
 
 #banner-img {
   opacity: 50%;
-}
+} */
 
 /* Main content */
 
-#about-me1 div {
-  display: flex
+#about-me1 {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  flex-wrap: wrap;
+
+}
+
+/* #img-cont {
+  flex: 2;
+} */
+
+.p-cont {
+  /* This is a child of the flexbox */
+  align-self: center;
+
+  /* But also a flexbox itself */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-content: space-between; */
+
+  width: 300px;
+  height: 450px;
+  border: 1px solid black
+}
+
+.subheading {
+  align-self: flex-start;
+}
+
+.paragraph1 {
+  align-self: flex-end;
 }
 
 .content-image {
   /* size: 30%; */
-  width: 30%;
+  width: 350px;
   border: 1px solid #E8630A;
   margin: 10%;
+  /* background-color: antiquewhite; */
 }
