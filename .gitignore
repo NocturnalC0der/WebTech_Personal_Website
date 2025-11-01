@@ -2,3 +2,11 @@
 assets/
 examples/
 0_context/
+
+
+*.MOV
+*.mov
+*.MP4
+*.mp4
+*.avi
+*.wmv
