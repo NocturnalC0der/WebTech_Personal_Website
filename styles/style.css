@@ -3,6 +3,12 @@ html {
   background-color:  #96D3D3;
 }
 
+header {
+  /* border: 3px solid pink */
+  width: 100%
+
+}
+
 /* Constant navbar styling */
 nav {
     /* define flex container */
@@ -14,7 +20,7 @@ nav {
     /* Space evenly on the x axis */
     justify-content: space-evenly;
 
-    /* height: %; */
+    height: 80px;
 
     background-color: #2B4353;
     /* padding-left: 30%; */
@@ -23,17 +29,22 @@ nav {
 
 nav a {
   /* margin: 10px; */
-  padding: 15px;
-  color: #E8630A
+  /* margin: 15px; */
+  color: #E8630A;
+  font-size: x-large;
+}
+
+p {
+  font-size: x-large;
 }
 
 footer { 
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
 
   background-color: #2B4353;
-  padding: 15px;
 }
 
 #contact-cont {
@@ -41,7 +52,7 @@ footer {
 }
 
 #quote-cont p {
-  width: 200px
+  width: 100%;
 }
 
 /* ------------ Name heading styling ------------ */
@@ -75,11 +86,25 @@ footer {
   justify-content: space-evenly;
   /* align-items: center; */
   flex-wrap: wrap;
+  /* width: 500px; */
+  /* border: 2px solid yellow */
+/*  */
+}
 
+#img-cont {
+  width: 400px;
+  /* border: 2px solid green */
+}
+
+#main_img {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid blue */
 }
 
 #cont-image-right {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -107,11 +132,23 @@ footer {
 
   width: 400px;
   height: 450px;
-  /* border: 1px solid black */
+  /* border: 2px solid black */
+}
+
+.img-cont1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 300px;
+  /* border: 2px solid orange */
+/*  */
 }
 
 .subheading {
   align-self: flex-start;
+  /* color: blue; */
+  font-size: xx-large;
 }
 
 .paragraph1 {
@@ -120,9 +157,9 @@ footer {
 
 .content-image {
   /* size: 30%; */
-  width: 350px;
+  width: 100%;
+  height: auto;
   border: 1px solid #E8630A;
-  margin: 10%;
   /* background-color: antiquewhite; */
 }
 
@@ -171,37 +208,86 @@ footer {
   align-items: stretch;
 }
 
-.content_div_1 div {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
-  margin: 15px;
-  /* border: 2px solid blue */
-
-}
-.content_div_1 div h1 {
+.content_div_1 h1 {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 50px;
 }
 
-.content_div_1 div .icon {
-  width: 250px
+
+.content_subdiv1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* height: 400px; */
+  padding: 15px;
+  /* border: 2px solid blue */
+  
 }
 
-.content_div_1 div .image1 {
-  width: 600px;
+.content_subdiv1 .icon {
+  width: auto;
+  height: 200px;
+} 
+
+.content_subdiv1 #workout_img1 {
+  width: auto;
+  height: 350px;
   border-radius: 30%;
 }
 
-.content_div_1 div p {
-  width: 300px;
-  font-size: large;
+.content_subdiv2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* height: 400px; */
+  /* margin: 15px; */
+  /* border: 2px solid blue */
+  
 }
+.content_subdiv2 img {
+  border: 2px solid orange;
+  border-radius: 4px;
+  padding: 5px;
+  height: 500px;
+  width: auto;
+}
+
+
+/* .icon_pair_img {
+  width: 250px;
+  border-radius: 50%;
+} */
+
+
+
+/* .content_subdiv p {
+  width: 300px;
+} */
+
+/* .content_subdiv img {
+  width: 300px;
+  height: auto;
+  border-radius: 5%;
+} 
+   */
+.content_subdiv_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 5px;
+  /* border: 2px solid brown */
+}
+
 
 .divider {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 #divider-main{
@@ -266,6 +352,89 @@ footer {
   border: 2px solid #E8630A
 }
 
-/* .gallery-image-cont img {
-  width: 300px
-} */
+/* ---------------------------------------- */
+
+/* Resume */
+
+.resume_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 3px solid red */
+}
+
+.description {
+  /* border: 2px solid green; */
+  width: 50%;
+}
+
+.img_div {
+  width: 500px;
+  /* border: 2px solid blue */
+}
+
+.img_div img {
+  width: 100%;
+
+}
+
+#coding_images {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.nested-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  /* border: 3px solid red */
+}
+
+#coding_images img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .description{
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------- */
+
+/* Contact */
+
+.form_part_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+#contact_form label {
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color:#2B4353;
+  letter-spacing: 5px;
+
+}
+
+#contact_form input {
+  height: 40px;
+  width: 30%;
+  font-size: large;
+}
+
+#contact_form button {
+  font-size: 50px;
+  background: #2B4353;
+  border: 3px solid #e8630a;
+  color: #e8630a;
+}
